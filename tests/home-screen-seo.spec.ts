@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test("Check home screen: title, description, h1, h2, h3", async ({ page }) => {
-  await page.goto("https://front-224c6963.develop.nasec.fr/");
+  await page.goto("https://www.nasec.fr/");
 
   await test.step("Home page title check", async () => {
     await expect(page).toHaveTitle(
